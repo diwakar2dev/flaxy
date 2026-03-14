@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flaxy Host | Minecraft Plans</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+body{
+background:#0b0f19;
+color:white;
+font-family:system-ui;
+overflow-x:hidden;
+}
+
+/* card animation */
+
+.plan-card{
+transition:all .4s ease;
+transform-style:preserve-3d;
+}
+
+.plan-card:hover{
+transform:rotateX(6deg) rotateY(-6deg) scale(1.05);
+box-shadow:0 25px 60px rgba(99,102,241,0.45);
+}
+
+/* floating animation */
+
+@keyframes float{
+0%{transform:translateY(0px)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0px)}
+}
+
+.float{
+animation:float 4s ease-in-out infinite;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="flex justify-between items-center px-10 py-4 border-b border-white/10 backdrop-blur-lg">
+
+<h1 class="text-2xl font-bold text-indigo-400">
+Flaxy Host
+</h1>
+
+<a href="index.html" class="text-gray-300 hover:text-white transition">
+Home
+</a>
+
+</nav>
+
+
+
+<!-- HEADER -->
+
+<section class="text-center mt-20 float">
+
+<h1 class="text-5xl font-bold mb-4">
+Premium Minecraft Hosting Plans
+</h1>
+
+<p class="text-gray-400">
+High Performance NVMe Servers For Your SMP
+</p>
+
+</section>
+
+
+
+<!-- PLANS -->
+
+<section class="grid md:grid-cols-3 gap-10 px-10 mt-20">
+
+
+
+<!-- STARTER -->
+
+<div class="plan-card bg-[#111827] p-8 rounded-xl border border-white/10">
+
+<h2 class="text-xl font-bold mb-4">Starter</h2>
+
+<p>🧠 RAM: 4GB</p>
+<p>⚡ CPU: 150%</p>
+<p>💾 Storage: 30GB NVMe</p>
+<p>👥 Players: 10-25</p>
+
+<h3 class="text-3xl font-bold text-indigo-400 mt-6">
+₹199 / month
+</h3>
+
+<a href="https://discord.gg/RChYDdTU" target="_blank"
+class="block mt-6 w-full text-center bg-indigo-600 hover:bg-indigo-700 transition p-3 rounded-lg hover:scale-105 hover:shadow-xl">
+Buy Now
+</a>
+
+</div>
+
+
+
+<!-- BASIC -->
+
+<div class="plan-card bg-[#111827] p-8 rounded-xl border border-indigo-500 relative">
+
+<span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-indigo-600 text-xs px-3 py-1 rounded-full">
+MOST POPULAR
+</span>
+
+<h2 class="text-xl font-bold mb-4">Basic</h2>
+
+<p>🧠 RAM: 8GB</p>
+<p>⚡ CPU: 250%</p>
+<p>💾 Storage: 50GB NVMe</p>
+<p>👥 Players: 25-50</p>
+
+<h3 class="text-3xl font-bold text-indigo-400 mt-6">
+₹399 / month
+</h3>
+
+<a href="https://discord.gg/RChYDdTU" target="_blank"
+class="block mt-6 w-full text-center bg-indigo-600 hover:bg-indigo-700 transition p-3 rounded-lg hover:scale-105 hover:shadow-xl">
+Buy Now
+</a>
+
+</div>
+
+
+
+<!-- STANDARD -->
+
+<div class="plan-card bg-[#111827] p-8 rounded-xl border border-white/10">
+
+<h2 class="text-xl font-bold mb-4">Standard</h2>
+
+<p>🧠 RAM: 16GB</p>
+<p>⚡ CPU: 350%</p>
+<p>💾 Storage: 80GB NVMe</p>
+<p>👥 Players: 50-90</p>
+
+<h3 class="text-3xl font-bold text-indigo-400 mt-6">
+₹699 / month
+</h3>
+
+<a href="https://discord.gg/RChYDdTU" target="_blank"
+class="block mt-6 w-full text-center bg-indigo-600 hover:bg-indigo-700 transition p-3 rounded-lg hover:scale-105 hover:shadow-xl">
+Buy Now
+</a>
+
+</div>
+
+
+
+<!-- PRO -->
+
+<div class="plan-card bg-[#111827] p-8 rounded-xl border border-white/10">
+
+<h2 class="text-xl font-bold mb-4">Pro</h2>
+
+<p>🧠 RAM: 32GB</p>
+<p>⚡ CPU: 500%</p>
+<p>💾 Storage: 140GB NVMe</p>
+<p>👥 Players: 90-150</p>
+
+<h3 class="text-3xl font-bold text-indigo-400 mt-6">
+₹1099 / month
+</h3>
+
+<a href="https://discord.gg/RChYDdTU" target="_blank"
+class="block mt-6 w-full text-center bg-indigo-600 hover:bg-indigo-700 transition p-3 rounded-lg hover:scale-105 hover:shadow-xl">
+Buy Now
+</a>
+
+</div>
+
+
+
+<!-- ULTIMATE -->
+
+<div class="plan-card bg-[#111827] p-8 rounded-xl border border-yellow-500">
+
+<h2 class="text-xl font-bold mb-4">Ultimate</h2>
+
+<p>🧠 RAM: 64GB</p>
+<p>⚡ CPU: 700%</p>
+<p>💾 Storage: 240GB NVMe</p>
+<p>👥 Players: 150-250</p>
+
+<h3 class="text-3xl font-bold text-yellow-400 mt-6">
+₹1899 / month
+</h3>
+
+<a href="https://discord.gg/RChYDdTU" target="_blank"
+class="block mt-6 w-full text-center bg-yellow-500 hover:bg-yellow-600 text-black transition p-3 rounded-lg hover:scale-105 hover:shadow-xl">
+Buy Now
+</a>
+
+</div>
+
+
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="text-center mt-24 mb-10 text-gray-500">
+
+© 2026 Flaxy Host. All Rights Reserved.
+
+</footer>
+
+
+</body>
+</html>
